@@ -74,7 +74,7 @@ namespace CodeCamper.Data
             }
         }
 
-        public void Delete(int id)
+        public virtual void Delete(int id)
         {
             var entity = GetById(id);
             if (entity == null) return; //Not found, assume already deleted.

@@ -39,8 +39,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IAttendanceRepository.cs" />
+    <Compile Include="IPersonsRepository.cs" />
     <Compile Include="IRepository.cs" />
+    <Compile Include="ISessionsRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CodeCamper.Model\CodeCamper.Model.csproj">
+      <Project>{1e1196a2-95f7-4338-8166-405dcdebfc7b}</Project>
+      <Name>CodeCamper.Model</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
